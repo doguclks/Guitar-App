@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   description: "Masaüstünde hazırla, mobilde pratik yap. Senkronize gitar akorları ve sözleri.",
   manifest: "/manifest.json",
   icons: {
-    icon: "/icon.svg",
-    apple: "/icon.svg",
+    icon: "/icon.png",
+    apple: "/icon.png",
   },
   appleWebApp: {
     capable: true,

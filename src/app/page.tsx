@@ -92,8 +92,8 @@ export default function HomePage() {
       <header className="sticky top-0 z-30 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
         <div className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="w-10 h-10 rounded-xl bg-amber-500/10 dark:bg-amber-500/20 text-amber-500 flex items-center justify-center font-bold">
-              🎸
+            <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center overflow-hidden shadow-sm">
+              <img src="/icon.png" alt="Guitar App" className="w-8 h-8 object-contain" />
             </div>
             <div>
               <h1 className="text-lg font-black tracking-tight flex items-center gap-1.5">
