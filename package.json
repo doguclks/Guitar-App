@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "eslint",
     "desktop": "cross-env NODE_ENV=development electron .",
-    "desktop:build": "next build && electron-builder --win portable"
+    "desktop:build": "next build && electron-builder --win nsis portable"
   },
   "build": {
     "appId": "com.mateo.guitarapp",
@@ -18,13 +18,26 @@
       "output": "dist-desktop"
     },
     "win": {
-      "target": "portable",
+      "target": [
+        "nsis",
+        "portable"
+      ],
       "icon": "public/icon.png"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowElevation": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Guitar App"
     },
     "files": [
       "electron/**/*",
       ".next/**/*",
       "public/**/*",
+      "next.config.ts",
+      ".env.local",
       "package.json"
     ],
     "asar": false
