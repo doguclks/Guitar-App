@@ -1,0 +1,5 @@
+dist-desktop
+electron
+node_modules
+.next
+*.exe
